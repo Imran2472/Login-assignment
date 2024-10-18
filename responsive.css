@@ -1,0 +1,652 @@
+:root{
+    /*========== Colors ==========*/
+/* Color mode HSL(hue, saturation, lightness) */
+--first-color--:  hsl(176, 88%, 27%);
+--first-color-alt--:  hsl(129, 44%, 94%);
+--second-color--:hsl(34, 94%, 87%);
+--title-color--:  hsl(0, 0%, 13%);
+--text-color--:  hsl(154, 13%, 32%);
+--text-color-light--:  hsl(60, 1%, 56%);
+--body-color--:  hsl(0, 0%, 100%);
+--container-color--:  hsl(0, 0%, 93%);
+--border-color--: hsl(129, 36%, 85%);
+--border-color-alt--: hsl(113, 15%, 90%);
+}
+/* ---------1175 responsive code---------------- */
+@media(max-width: 1175px){
+    /* ------------------products section ------------------ */
+    #product .container-fluid .row .col_product .contents .disc h2{
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    #hero .container-fluid .row .col_hero .info_text .heading{
+        line-height: 45px;
+        font-size: 50px !important;
+    }
+    #hero .container-fluid .row .col_hero .info_text .large{
+        font-size: 40px !important;
+        color: var(--first-color--);
+    }
+
+    /* login page  */
+    #login .container-fluid .row .form form{
+        width: 60% !important;
+    }
+    
+}
+/* ---------1076 responsive code---------------- */
+@media(max-width: 1076px){
+    /* ------------------products section ------------------ */
+    #product .container-fluid .row .col_product .contents .disc .shop_icon{
+        position: absolute;
+        bottom: 1rem;
+        right: .8rem;
+    }
+
+    /* -----------add to cart responsive-------------------------  */
+    #add-to-cart{
+        width: 46%;
+        
+    }
+        /* ------------footer wrapper section------------------ */
+footer .container-fluid .row{
+    display: grid;
+    grid-template-columns: 250px 1fr 1fr 1fr;
+    grid-gap: 1rem;
+}
+    
+
+}
+@media(max-width : 1000px){
+    /* ----------top header content responsive-------- */
+    .top_header {
+        padding: .8rem 2rem;
+    }
+    /* ----------header content responsive-------- */
+    .header{
+        padding: .5rem 2rem;
+    }
+    /* -------hero content wrapper ------------------ */
+#hero{
+    padding: 5rem 2em;
+}
+/* -------------------slider hero----------------  */
+#pro_slider{
+    padding: 2rem 2rem;
+}
+/* ----------------------products section responsive----------------------- */
+#product{
+    width: 100%;
+    padding: 3rem 2rem;
+}
+
+#product .container-fluid .row{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1.3rem;
+}
+/* ------------------timerr content wrapper -------------------- */
+#timer{
+    width: 100%;
+    padding: 1.5rem 2rem;
+}
+#timer .container-fluid .row .col_timer:nth-child(2){
+    background-position: 50% 50%;
+
+}
+
+/* -----------------product slider ---------------- */
+#product_slider{
+    width: 100%;
+    padding: 2rem 2rem;
+}
+
+/* -------------------sealer prodict section wrapper--------------  */
+#seals{
+    width: 100%;
+    padding: 2rem 2rem;
+}
+/* ----------------------newsletter content wrapper------------------- */
+#newsletter{
+    padding: 4rem 2rem;
+}
+#newsletter .container-fluid .row{
+    grid-template-columns: 250px 1fr;
+}
+#newsletter .container-fluid .row .none_d{
+   display: none;
+}
+/* ------------footer wrapper section------------------ */
+footer{
+    padding: 2rem 2rem 0 2rem;
+}
+.foter_end{
+    padding: 10px 2rem;
+}
+/* -----------------account--------------------- */
+#account{
+    width: 100%;
+    padding: 4rem 2rem;
+}
+#account .container-fluid .row{
+    grid-template-columns: 300px 1fr;
+    grid-gap: 1.2rem;
+}
+/* ----------------compare wrapper--------------------- */
+#compare{
+    padding: 4rem 2rem;
+    width: 100%;
+}
+/* --------------------------header down buttons ----------------  */
+#shop_button{
+    padding: 1rem 2rem;
+}
+/* -----------------------------login page-------------------------------- */
+
+#login{
+    padding: 2rem;
+}
+}
+/* --------------------------------------902px responsive media-------------------------- */
+@media(max-width : 902px){
+    
+    /* ----------header content responsive-------- */
+    .header .header_nav .logo_navbar{
+        gap: 1.4rem !important;
+    }
+    
+    /* -----------------------------offers section wrapper--------------  */
+    #timer .container-fluid .row .col_timer{
+        padding: 30px 35px;
+    }
+
+    #timer .container-fluid .row .col_timer .deals{
+        font-size: 20px;
+    }
+    #timer .container-fluid .row .col_timer .limit{
+        font-size: 12px;
+    }
+    #timer .container-fluid .row .col_timer .timer_main .price{
+        font-size: 18px;
+        font-weight: 500;
+        color: red;
+    }
+    #timer .container-fluid .row .col_timer .timer_main .price span{
+        font-size: 13px;
+    }
+    #timer .container-fluid .row .col_timer .timer_main .boxes .box_item .box{
+        width: 40px;
+        height: 30px;
+        font-size: 18px;
+    }
+    /* ------------------sealer products content wrapper-----------------  */
+    #seals .container-fluid .row{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    /* ------------------ #account------------------------------ */
+    #account .container-fluid .row{
+        grid-template-columns: 250px 1fr;
+    }
+    #account .container-fluid .row .account_col .content .account_button{
+        padding: 11px 25px;
+        font-size: 14px;
+    }
+}
+/* --------------------------------------857px responsive media-------------------------- */
+@media(max-width : 857px){
+    .header .header_nav  .search .search_bar{
+      display: none;
+    }
+    .header .header_nav  .search{
+        justify-content: flex-end;
+    }
+    .header .header_nav .logo_navbar .navbar{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background-color: var(--body-color--);
+        z-index: 999;
+        display: none;
+        flex-direction: column;
+        justify-content: flex-start !important;
+        align-items: flex-start !important;
+        padding: 2rem;
+        gap: 1.5rem;
+        clip-path: polygon(100% 34%, 100% 0%, 100% 100%, 100% 62%);
+        opacity: 0;
+        transition: .5s ease;
+        z-index: 999;
+    }
+    .header .header_nav .logo_navbar .navbar.show{
+        display: flex !important;
+        clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%);
+        opacity: 1;
+    }
+    .header .header_nav .logo_navbar .navbar ul{
+        display: flex;
+        flex-direction: column;
+        gap: 1.2rem;
+        justify-content: flex-start !important;
+        align-items: flex-start !important;
+    }
+    .header .header_nav .logo_navbar .navbar .logo{
+        display: block !important;
+    }
+    .header .header_nav .logo_navbar .navbar .search_bar{
+        display: flex !important;
+        width: 100% !important;
+    }
+    .header .header_nav .logo_navbar .navbar .close_bar{
+        display: block !important;
+        position: fixed;
+        top: 1.5rem;
+        right: 1.5rem;
+    }
+    .header .header_nav .logo_navbar .navbar .close_bar i{
+        font-size: 16px;
+        padding: .4rem;
+        background: var(--first-color--);
+        color: var(--body-color--);
+        border-radius: .4rem .6rem;
+    }
+    .menu-bar{
+        display: block !important; 
+    }
+
+            /* ------------footer wrapper section------------------ */
+footer .container-fluid .row{
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2rem;
+}
+
+/* ---------------her0---------------------- */
+#hero .container-fluid .row .col_hero .info_text .heading{
+    line-height: 45px;
+    font-size: 40px !important;
+}
+#hero .container-fluid .row .col_hero .info_text .large{
+    font-size: 35px !important;
+    color: var(--first-color--);
+}
+.padding_box{
+    padding: 20px 20px 14px 20px;
+}
+#account .container-fluid .row .account_col .content .shops{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    padding: 21px 20px;
+}
+
+/* compare section wrapper------  */
+#compare .container-fluid .row{
+    grid-template-columns: 1fr 1fr 1fr !important;
+}
+#compare .container-fluid .row .col_com:nth-child(1){
+    display: none;
+}
+
+}
+
+/* ---------677 responive screen------------------------- */
+@media(max-width:809px){
+    /* ----------hero section---------------- */
+    #hero .container-fluid .row .col_hero .info_text .large{
+        font-size: 2.5rem !important;
+        color: var(--first-color--);
+    }
+       /* --------------------timer section responsive code------------------------ */
+       #timer .container-fluid .row .col_timer .timer_main{
+        width: 100%;
+    }
+
+}
+/* ---------770 responive screen------------------------- */
+@media(max-width:770px){
+    #product .container-fluid .row .col_product .contents .disc h2{
+        font-size: 15px;
+        font-weight: 600;
+    }
+    #timer .container-fluid .row{
+        grid-template-columns: 1fr;
+    }
+ 
+    /* -----------add to cart responsive-------------------------  */
+    #add-to-cart{
+        width: 66%;
+        
+    }
+        /* ------------------sealer products content wrapper-----------------  */
+        #seals .container-fluid .row{
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        /* ----------------newsletter wrapper------------  */
+        #newsletter .container-fluid .row{
+            grid-template-columns: 220px 1fr;
+        }
+
+            /* ------------------ #account------------------------------ */
+    #account .container-fluid .row{
+        grid-template-columns:1fr;
+        row-gap: 2rem;
+    }
+ 
+/* compare section wrapper------  */
+#compare .container-fluid .row{
+    grid-template-columns: 1fr 1fr !important;
+    row-gap: 2rem;
+}
+        
+}
+
+/* ---------677 responive screen------------------------- */
+@media(max-width:679px){
+    .top_header .top_nav .bottom{
+        display: none !important;
+    }
+    /* -----------HERO SECTION RESPONSIVE------------  */
+    #hero .container-fluid .row{
+        grid-template-columns: 1fr;
+        gap: 4.5rem;
+    }
+    /* ------------------products responsive code---------------  */
+    #product .container-fluid .row{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1.3rem;
+    }
+
+    /* -----------------cart responsive code-----------------  */
+    #add-to-cart .cart_box .cart_container .width_div .cart_title{
+        font-size: 1rem;
+    }
+    #add-to-cart .cart_box .cart_container .cart_col .width_div{
+        width:auto;
+    }
+    #add-to-cart .cart_box .cart_container .width_div:nth-child(1){
+        width: 60%;
+    }
+    
+        /* ----------------newsletter wrapper------------  */
+        #newsletter .container-fluid .row{
+            grid-template-columns:1fr;
+            gap: 2rem;
+        }
+        #newsletter .container-fluid .row .col_news{
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+                    /* ------------footer wrapper section------------------ */
+footer .container-fluid .row{
+    grid-template-columns:1fr 1fr;
+    grid-gap: 2.5rem;
+}
+.foter_end{
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-items: center !important;
+  gap: 1rem !important;
+  text-align: center;
+}
+
+/* ---------------her0---------------------- */
+#hero .container-fluid .row .col_hero .info_text .heading{
+    line-height: 45px;
+    font-size: 30px !important;
+}
+#hero .container-fluid .row .col_hero .info_text .large{
+    font-size: 25px !important;
+    color: var(--first-color--);
+}
+
+
+/* ---------------her0---------------------- */
+#hero .container-fluid .row .col_hero .info_text .heading{
+    line-height: 45px;
+    font-size: 50px !important;
+}
+#hero .container-fluid .row .col_hero .info_text .large{
+    font-size: 45px !important;
+    color: var(--first-color--);
+}
+
+
+    /* login page  */
+    #login .container-fluid .row .form form{
+        width: 80% !important;
+    }
+ }
+/* ---------500 responive screen------------------------- */
+@media(max-width:500px){
+   /* ----------top header content responsive-------- */
+   .top_header {
+    padding: .8rem 1rem;
+}
+/* ----------header content responsive-------- */
+.header{
+    padding: .5rem 1rem;
+}
+/* -------hero content wrapper ------------------ */
+#hero{
+padding: 5rem 1em;
+}
+/* ---------------hero slider section ----------------------  */
+#pro_slider{
+    padding: 2rem 1rem;
+}
+/* ---------------products section-----------  */
+#product{
+    padding: 3rem 1rem;
+}
+#product .filter_buttons .buttons{
+    padding: .5rem 1rem;
+    font-size: .8rem;
+    font-weight: 400;
+}
+#product .container-fluid .row .col_product .contents .disc .shop_icon i{
+    font-size: 14px;
+    width: 35px;
+    height: 35px;
+    display: flex;
+}
+/* ------------------timerr content wrapper -------------------- */
+#timer{
+    width: 100%;
+    padding: 1.5rem 1rem;
+}
+
+    /* -----------add to cart responsive-------------------------  */
+    #add-to-cart{
+        width: 76%;
+        
+    }
+    /* --------------------product slider section--------------------  */
+    #product_slider{
+        width: 100%;
+        padding: 2rem 1rem;
+    }
+    /* -------------------sealer prodict section wrapper--------------  */
+#seals{
+    width: 100%;
+    padding: 2rem 1rem;
+}
+#seals .container-fluid .row .col_seals .content .products .info .name{
+    font-size: 11px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    margin: 5px 0 0 0;
+
+}
+#seals .container-fluid .row .col_seals .content .products .info .price{
+    font-size: 11px;
+}
+/* ----------------------newsletter content wrapper------------------- */
+#newsletter{
+    padding: 4rem 1rem;
+}
+/* ------------footer wrapper section------------------ */
+footer{
+    padding: 2rem 1rem 0 1rem;
+}
+.foter_end{
+    padding: 10px 1rem;
+}
+/* ------------footer wrapper section------------------ */
+footer .container-fluid .row{
+    grid-template-columns:1fr;
+    grid-gap: 2.5rem;
+}
+
+#hero .container-fluid .row .col_hero .info_text .heading{
+    line-height: 35px;
+    font-size: 35px !important;
+}
+#hero .container-fluid .row .col_hero .info_text .large{
+    font-size: 30px !important;
+    color: var(--first-color--);
+}
+/* -----------------account--------------------- */
+#account{
+    width: 100%;
+    padding: 4rem 1rem;
+}
+
+#account .container-fluid .row .account_col .content .shops .shop_box .shop_title{
+    font-size: 14px;
+}
+
+#account .container-fluid .row .account_col .content .shops .shop_box .shop_id{
+    font-size: 12px;
+}
+
+#account .container-fluid .row .account_col .content .shops{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 21px 20px;
+}
+
+/* ----------------compare wrapper--------------------- */
+#compare{
+    padding: 4rem 1rem;
+    width: 100%;
+}
+/* compare section wrapper------  */
+#compare .container-fluid .row{
+    grid-template-columns: 1fr !important;
+}
+/* --------------------------header down buttons ----------------  */
+#shop_button{
+    padding: 1rem;
+}
+/* -----------------------------login page-------------------------------- */
+
+#login{
+    padding: 2rem 1rem;
+}
+    /* login page  */
+    #login .container-fluid .row .form form{
+        width: 100% !important;
+        padding: 1rem 1rem;
+    }
+    #login .container-fluid .row .form form .form-text{
+        font-size: 12px !important;
+
+    }
+}
+/* ----------------------media query 400px-------------------- */
+@media(max-width:400px){
+    /* hero slider content wrapper---------- */
+    .info .text h1{
+        font-size: 1.4rem;
+    }
+    .info .arrow i{
+        font-size: 1rem;
+        padding: .4rem .6rem;
+
+    }
+/* -------------------products responsive--------------  */
+#product .container-fluid .row{
+    grid-template-columns: 1fr;
+}
+#product .container-fluid .row .col_product .contents .disc .shop_icon{
+    bottom: 1rem;
+    right: 1.5rem;
+}
+#product .container-fluid .row .col_product .contents .disc .shop_icon i{
+    font-size: 16px;
+    width: 45px;
+    height: 45px;
+    display: flex;
+}
+
+    /* -----------add to cart responsive-------------------------  */
+    #add-to-cart{
+        width: 95%;
+        
+    }
+       /* ------------------sealer products content wrapper-----------------  */
+       #seals .container-fluid .row{
+        grid-template-columns: 1fr;
+    }
+
+    /* ---------------her0---------------------- */
+
+
+}
+
+/* ---------337 responive screen------------------------- */
+@media(max-width:341px){
+  /* ----------hero section---------------- */
+
+#hero .container-fluid .row .col_hero .info_text .heading{
+    line-height: 30px;
+    font-size: 1.8rem !important;
+}
+#hero .container-fluid .row .col_hero .info_text .large{
+    font-size: 2rem !important;
+    color: var(--first-color--);
+}
+.top_header .top_nav .col_box .content span{
+    font-size: 12px;
+    font-weight: 300;
+    color: var(--text-color-light--);
+}
+.top_header .top_nav .col_box .content .buttons a{
+    font-size: 12px;
+    font-weight: 300;
+    color: var(--text-color-light--);
+
+}
+
+#product .filter_buttons {
+    justify-content: center !important;
+    align-items: center !important;
+    padding: 0 .5rem;
+}
+#product .filter_buttons .buttons{
+    padding: .4rem .6rem;
+    font-size: 13px;
+}
+#product .container-fluid .row{
+    padding: 1rem 0;
+    margin-top: 1rem;
+}
+/* --------------------timer section wrapper ---------------------- */
+#timer .container-fluid .row .col_timer{
+    background-position: left !important;
+
+}
+#account .container-fluid .row .account_col .content .shops{
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 21px 20px;
+}
+}
